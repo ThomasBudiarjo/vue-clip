@@ -33,7 +33,7 @@
                 v-model="slug"
                 type="text"
                 placeholder="my-secret-text"
-                class="input-field pl-32"
+                class="input-field-clear pl-32"
                 :class="{
                   'border-red-400 focus:border-red-400 focus:ring-red-400/20': errors.slug,
                   'border-green-400 focus:border-green-400 focus:ring-green-400/20': slug && !errors.slug
