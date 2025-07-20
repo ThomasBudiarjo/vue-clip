@@ -23,17 +23,12 @@
               Custom URL (optional)
             </label>
             <div class="relative">
-              <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <span class="text-gray-500 sm:text-sm">
-                  {{ baseUrl }}/
-                </span>
-              </div>
               <input
                 id="slug"
                 v-model="slug"
                 type="text"
                 placeholder="my-secret-text"
-                class="input-field-clear pl-32"
+                class="input-field-clear"
                 :class="{
                   'border-red-400 focus:border-red-400 focus:ring-red-400/20': errors.slug,
                   'border-green-400 focus:border-green-400 focus:ring-green-400/20': slug && !errors.slug
@@ -159,9 +154,6 @@ export default {
     }
   },
   computed: {
-    baseUrl() {
-      return window.location.origin
-    },
     isFormValid() {
       return this.content.trim() && 
              !this.errors.slug && 
