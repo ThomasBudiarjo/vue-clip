@@ -1,0 +1,5 @@
+app-plan.md
+node_modules
+.claude
+dist
+.env
